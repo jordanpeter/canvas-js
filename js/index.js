@@ -1,0 +1,10 @@
+var canV = document.getElementById("dessin");
+var ctx = canV.getContext("2d");
+ctx.beginPath();
+ctx.fillRect(0, 0,(400/3),400);
+ctx.fillStyle="yellow";
+ctx.fillRect((400/3), 0, (400/3), 400);
+ctx.fillStyle="red";
+ctx.fillRect((400/3)*2, 0, (400/3), 400);
+ctx.stroke();
+ctx.closePath();
